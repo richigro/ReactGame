@@ -2,6 +2,7 @@ main {
     background-color: #1f253d;
     display: block;
     margin: 0 auto;
+    margin-top: 15px;
     width: 98%;
-    height: 95vh;
+    height: 97vh;
 }

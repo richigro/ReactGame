@@ -1,10 +1,8 @@
 import React from 'react';
-import './button1.css';
+import './whatButton.css';
 
-export default function Button1(props) {
+export default function whatButton(props) {
     return(
-        <div className="button1-box">
-            <button className="button1-btn">WHAT?</button>
-        </div>
+        <button className="whatButton-btn">WHAT?</button>
     );
 }

@@ -1,0 +1,32 @@
+.gameBox-box {
+    width: 380px;
+    height: 380px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.directions-box {
+    height: 72px;
+    width: 100%;
+    background-color: #cc324b;
+    padding: 0;
+    margin: 0;
+}
+.directions-title {
+    position: fixed;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.actionBox {
+    height: 228px;
+    width: 100%;
+    background-color: #394264;
+}
+
+.guessesBox {
+    height: 80px;
+    width: 100%;
+    background-color: #11a8ab;
+}

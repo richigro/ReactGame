@@ -1,0 +1,10 @@
+.numberBox {
+    padding: 4px;
+    font-size: 15px;
+    color: white;
+    background-color: #1a4e95;
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+}

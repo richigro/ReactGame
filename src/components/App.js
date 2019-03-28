@@ -7,6 +7,7 @@ export default function App(props) {
     return (
         <main className="main">
             <WhatButton />
+            
             <NewGameButton />
         </main>
     );

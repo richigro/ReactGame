@@ -1,6 +1,8 @@
 import React from 'react';
 import './gameBox.css';
 import GuessedNumber from './guessedNumber';
+import GuessForm from './guessForm';
+import GuessCounter from './guessCounter';
 
 export default function GameBox(props) {
     return (
@@ -9,7 +11,8 @@ export default function GameBox(props) {
                 <h1 className="directions-title">Make your Guess!</h1>
             </div>
             <div className="actionBox">
-                
+                <GuessForm />
+                <GuessCounter />
             </div>
             <div className="guessesBox">
                 <GuessedNumber />

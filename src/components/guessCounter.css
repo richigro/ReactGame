@@ -1,0 +1,16 @@
+.guessCounter-container {
+    height: 57px;
+    text-align: center;
+    margin-top: 14px;
+    padding-bottom: 14px;
+}
+.guessCounterText {
+    font-size: 28px;
+    color: black;
+}
+
+.guessCounterNumber {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #f39c12;
+}

@@ -5,12 +5,9 @@ import GuessForm from './guessForm';
 import GuessCounter from './guessCounter';
 
 export default class GameBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            userGuess: 0,
-            guesses: [{guess: 1}, {guess: 5}, {guess: 9}, {guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1}]
-        }
+    state = {
+        userGuess: 0,
+        guesses: [{guess: 1}, {guess: 5}, {guess: 9}, {guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1}]
     }
 
     render() {

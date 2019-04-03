@@ -2,12 +2,8 @@ import React from 'react';
 import './guessForm.css';
 
 export default class GuessForm extends React.Component {
-    
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentGuess: null
-        }
+    state ={
+        currentGuess: []
     }
 
     onSubmit(event) {

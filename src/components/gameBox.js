@@ -1,6 +1,6 @@
 import React from 'react';
 import './gameBox.css';
-import GuessedNumber from './guessedNumber';
+import GuessedNumberBox from './guessedNumberBox';
 import GuessForm from './guessForm';
 import GuessCounter from './guessCounter';
 
@@ -9,20 +9,13 @@ export default class GameBox extends React.Component {
         super(props);
         this.state = {
             userGuess: 0,
-            pastGuesses: [{guess: 1}, {guess: 5}, {guess: 9}, {guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1}]
+            guesses: [{guess: 1}, {guess: 5}, {guess: 9}, {guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1},{guess: 1}]
         }
     }
 
     render() {
         const computerNumber = Math.floor(Math.random() * 100 + 1);
         // console.log(computerNumber);
-
-        const pastGuesses = this.state.pastGuesses.map((guess, index) =>
-            <li className="numberBox" key={index}>
-                <GuessedNumber {...guess} />
-            </li>
-        );
-
         return (
             <section className="gameBox-box">
                 <div className="directions-box">
@@ -33,9 +26,7 @@ export default class GameBox extends React.Component {
                     <GuessCounter />
                 </div>
                 <div className="guessesBox">
-                    <ul>
-                        {pastGuesses}
-                    </ul>
+                    <GuessedNumberBox guesses={[1, 2, 5, 10, 100, 56, 80]}/>
                 </div>
             </section>
         );
